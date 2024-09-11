@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagement.Application.Contracts.Persistence
 {
-    public interface IAuthorRepository : IRepository<Author>
+    public interface IAuthorRepository : IGenericRepository<Author>
     {
         Task<Author> GetByIdAsync(int id);
         Task<IEnumerable<Author>> GetAllAsync();

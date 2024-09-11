@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagement.Application.Contracts.Persistence
 {
-    public interface IMemberRepository : IRepository<Member>
+    public interface IMemberRepository : IGenericRepository<Member>
     {
         Task<Member> GetMemberByEmailAsync(string email);
     }

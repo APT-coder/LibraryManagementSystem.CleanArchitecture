@@ -37,12 +37,12 @@ namespace LibraryManagementSystem.Persistence.DatabaseContext
             foreach (var entry in base.ChangeTracker.Entries<BaseEntity>()
                 .Where(q => q.State == EntityState.Added || q.State == EntityState.Modified))
             {
-                entry.Entity.UpdatedDate = DateTime.Now;
+                entry.Entity.UpdatedDate = DateTime.UtcNow;
 
                 if (entry.State == EntityState.Added)
                 {
 
-                    entry.Entity.CreatedDate = DateTime.Now;
+                    entry.Entity.CreatedDate = DateTime.UtcNow;
                 }
             }
             return base.SaveChangesAsync(cancellationToken);

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagement.Application.Contracts.Persistence
 {
-    public interface ILoanRepository : IRepository<Loan>
+    public interface ILoanRepository : IGenericRepository<Loan>
     {
         Task<IEnumerable<Loan>> GetLoansByMemberIdAsync(int memberId);
         Task<IEnumerable<Loan>> GetActiveLoansAsync();

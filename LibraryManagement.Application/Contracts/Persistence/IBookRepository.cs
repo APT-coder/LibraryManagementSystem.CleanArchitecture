@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagement.Application.Contracts.Persistence
 {
-    public interface IBookRepository : IRepository<Book>
+    public interface IBookRepository : IGenericRepository<Book>
     {
         Task<IEnumerable<Book>> GetBooksByAuthorIdAsync(int authorId);
     }
