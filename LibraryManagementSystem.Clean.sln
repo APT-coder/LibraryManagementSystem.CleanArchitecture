@@ -14,16 +14,30 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{8F009834-ABAA-4F8E-A8C5-A5AF6A9C2C75}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem.Api", "LibraryManagementSystem.Api\LibraryManagementSystem.Api.csproj", "{E78F4BD6-8B1F-497D-B109-E6E6C8320552}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0DDC5384-3BB7-4B31-83FB-3D785EEB44F7} = {0DDC5384-3BB7-4B31-83FB-3D785EEB44F7}
+		{AF98F927-0FAE-4538-BCF3-AE53D2FFBC86} = {AF98F927-0FAE-4538-BCF3-AE53D2FFBC86}
+		{DA98EE83-D53F-472D-A386-B99F765CB04D} = {DA98EE83-D53F-472D-A386-B99F765CB04D}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement.Application", "LibraryManagement.Application\LibraryManagement.Application.csproj", "{0DDC5384-3BB7-4B31-83FB-3D785EEB44F7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EF485915-7E96-4040-9472-F0E7D881F768} = {EF485915-7E96-4040-9472-F0E7D881F768}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement.Domain", "LibraryManagement.Domain\LibraryManagement.Domain.csproj", "{EF485915-7E96-4040-9472-F0E7D881F768}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem.Identity", "LibraryManagementSystem.Identity\LibraryManagementSystem.Identity.csproj", "{6ACC1B14-CC51-44AE-9C3C-80E6218A02D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem.Infrastructure", "LibraryManagementSystem.Infrastructure\LibraryManagementSystem.Infrastructure.csproj", "{DA98EE83-D53F-472D-A386-B99F765CB04D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0DDC5384-3BB7-4B31-83FB-3D785EEB44F7} = {0DDC5384-3BB7-4B31-83FB-3D785EEB44F7}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem.Persistence", "LibraryManagementSystem.Persistence\LibraryManagementSystem.Persistence.csproj", "{AF98F927-0FAE-4538-BCF3-AE53D2FFBC86}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0DDC5384-3BB7-4B31-83FB-3D785EEB44F7} = {0DDC5384-3BB7-4B31-83FB-3D785EEB44F7}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem.Application.UnitTests", "LibraryManagementSystem.Application.UnitTests\LibraryManagementSystem.Application.UnitTests.csproj", "{8890C29D-3FD8-40D1-A9B9-27FF7D02B2E6}"
 EndProject
